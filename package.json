@@ -1,0 +1,27 @@
+{
+  "name": "@zettacore-labs/carf-xml",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Typed OECD CARF XML message model, deterministic serializer, XSD validation, error translation and CLI. Scaffold only; built in M02.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint . --max-warnings=0",
+    "clean": "rm -rf dist"
+  },
+  "devDependencies": {
+    "@types/node": "24.19.0",
+    "typescript": "6.0.3"
+  }
+}
