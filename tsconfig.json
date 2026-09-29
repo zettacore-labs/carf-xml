@@ -1,8 +1,6 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
-  // Standalone on purpose: this package is mirrored to the public repo zettacore-labs/carf-xml
-  // (ADR-015), so it cannot extend @plumbline/config. Keep these options in step with
-  // packages/config/tsconfig.base.json.
+  // Self-contained on purpose: the package builds on its own, with no parent tsconfig.
   "compilerOptions": {
     "target": "ES2023",
     "lib": ["ES2023"],
@@ -25,7 +23,10 @@
     "declarationMap": true,
     "sourceMap": true,
     "noEmit": true,
+    // Scripts run with Node's type stripping, so they import .ts files directly.
+    "allowImportingTsExtensions": true,
+    "erasableSyntaxOnly": true,
     "types": ["node"]
   },
-  "include": ["src", "*.ts"]
+  "include": ["src", "scripts", "test", "*.ts"]
 }
