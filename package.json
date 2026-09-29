@@ -1,27 +1,71 @@
 {
   "name": "@zettacore-labs/carf-xml",
-  "version": "0.0.0",
-  "private": true,
-  "description": "Typed OECD CARF XML message model, deterministic serializer, XSD validation, error translation and CLI. Scaffold only; built in M02.",
+  "version": "0.1.0",
+  "description": "Build, validate and explain OECD Crypto-Asset Reporting Framework (CARF) XML messages, exactly as the official OECD XML Schema defines them.",
   "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zettacore-labs/carf-xml.git"
+  },
+  "homepage": "https://github.com/zettacore-labs/carf-xml#readme",
+  "bugs": {
+    "url": "https://github.com/zettacore-labs/carf-xml/issues"
+  },
+  "keywords": [
+    "carf",
+    "crypto-asset reporting framework",
+    "dac8",
+    "oecd",
+    "xml",
+    "xsd",
+    "tax"
+  ],
   "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
       "default": "./dist/index.js"
     }
   },
+  "bin": {
+    "carf-xml": "bin/carf-xml.js"
+  },
   "files": [
-    "dist"
+    "bin",
+    "dist",
+    "CHANGELOG.md",
+    "NOTICE",
+    "SECURITY.md"
   ],
+  "sideEffects": false,
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
     "typecheck": "tsc --noEmit",
     "lint": "eslint . --max-warnings=0",
-    "clean": "rm -rf dist"
+    "test": "vitest run --coverage",
+    "test:unit": "vitest run",
+    "test:coverage": "vitest run --coverage",
+    "inventory": "node scripts/xsd-inventory.ts",
+    "clean": "rm -rf dist coverage"
+  },
+  "dependencies": {
+    "saxes": "6.0.0",
+    "xmlbuilder2": "4.0.3",
+    "zod": "4.6.5"
   },
   "devDependencies": {
+    "@eslint/js": "10.0.1",
     "@types/node": "24.19.0",
-    "typescript": "6.0.3"
+    "@typescript-eslint/utils": "8.70.1",
+    "@vitest/coverage-v8": "5.0.2",
+    "eslint": "10.11.0",
+    "fast-check": "4.10.2",
+    "globals": "17.12.0",
+    "typescript": "6.0.3",
+    "typescript-eslint": "8.70.1",
+    "vitest": "5.0.2"
   }
 }
