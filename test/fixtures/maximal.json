@@ -1,0 +1,853 @@
+{
+  "messageSpec": {
+    "sendingEntityIn": "TEST-SENDER-0001",
+    "transmittingCountry": "GB",
+    "receivingCountry": "FR",
+    "messageType": "CARF",
+    "warning": "Synthetic test data",
+    "contact": "Synthetic contact details",
+    "messageRefId": "GB2027FRMAXIMAL0001",
+    "messageTypeIndic": "CARF701",
+    "reportingPeriod": "2027-12-31",
+    "timestamp": "2028-03-01T09:00:00.123"
+  },
+  "carfBodies": [
+    {
+      "rcasp": {
+        "rcaspId": {
+          "individual": {
+            "resCountryCodes": ["GB"],
+            "tins": [
+              {
+                "value": "TEST-TIN-FR-0100",
+                "issuedBy": "FR",
+                "unknown": false
+              }
+            ],
+            "iins": [
+              {
+                "value": "TEST-IIN-0100",
+                "issuedBy": "FR"
+              }
+            ],
+            "names": [
+              {
+                "nameType": "OECD202",
+                "precedingTitle": "Dr",
+                "titles": ["Prof"],
+                "firstName": {
+                  "value": "Alex",
+                  "xnlNameType": "Given"
+                },
+                "middleNames": [
+                  {
+                    "value": "Test",
+                    "xnlNameType": "Middle"
+                  }
+                ],
+                "namePrefix": {
+                  "value": "van",
+                  "xnlNameType": "Prefix"
+                },
+                "lastName": {
+                  "value": "Example",
+                  "xnlNameType": "Family"
+                },
+                "generationIdentifiers": ["III"],
+                "suffixes": ["Jr"],
+                "generalSuffix": "Esq"
+              }
+            ],
+            "addresses": [
+              {
+                "legalAddressType": "OECD301",
+                "countryCode": "FR",
+                "addressFix": {
+                  "street": "1 Example Street",
+                  "buildingIdentifier": "Building A",
+                  "suiteIdentifier": "Suite 1",
+                  "floorIdentifier": "Floor 2",
+                  "districtName": "Example District",
+                  "pob": "PO Box 1",
+                  "postCode": "00000",
+                  "city": "Paris",
+                  "countrySubentity": "Example Region"
+                },
+                "additionalAddressInfo": "Test address for fixtures"
+              }
+            ],
+            "nationalities": ["FR"],
+            "birthInfo": {
+              "birthDate": "1900-01-01",
+              "birthPlace": {
+                "city": "Paris",
+                "citySubentity": "Example Quarter",
+                "countryInfo": {
+                  "countryCode": "FR"
+                }
+              }
+            }
+          }
+        },
+        "nexus": "CARF904",
+        "otherNexus": {
+          "nexus": "CARF901",
+          "resCountryCode": "FR"
+        },
+        "docSpec": {
+          "docTypeIndic": "OECD1",
+          "docRefId": "GB2027-MAXIMAL-R-0001"
+        }
+      },
+      "cryptoUsers": [
+        {
+          "userId": {
+            "entity": {
+              "resCountryCodes": ["FR"],
+              "tins": [
+                {
+                  "value": "TEST-TIN-FR-0200",
+                  "issuedBy": "FR"
+                }
+              ],
+              "ins": [
+                {
+                  "value": "TEST-LEI-0200",
+                  "issuedBy": "FR",
+                  "inType": "LEI"
+                }
+              ],
+              "iins": [
+                {
+                  "value": "TEST-IIN-0200",
+                  "issuedBy": "FR"
+                }
+              ],
+              "names": [
+                {
+                  "value": "Maximal Example SA",
+                  "nameType": "OECD207"
+                }
+              ],
+              "addresses": [
+                {
+                  "legalAddressType": "OECD301",
+                  "countryCode": "FR",
+                  "addressFix": {
+                    "street": "1 Example Street",
+                    "buildingIdentifier": "Building A",
+                    "suiteIdentifier": "Suite 1",
+                    "floorIdentifier": "Floor 2",
+                    "districtName": "Example District",
+                    "pob": "PO Box 1",
+                    "postCode": "00000",
+                    "city": "Paris",
+                    "countrySubentity": "Example Region"
+                  },
+                  "additionalAddressInfo": "Test address for fixtures"
+                }
+              ]
+            }
+          },
+          "controllingPersons": [
+            {
+              "individual": {
+                "resCountryCodes": ["FR"],
+                "tins": [
+                  {
+                    "value": "TEST-TIN-FR-0100",
+                    "issuedBy": "FR",
+                    "unknown": false
+                  }
+                ],
+                "iins": [
+                  {
+                    "value": "TEST-IIN-0100",
+                    "issuedBy": "FR"
+                  }
+                ],
+                "names": [
+                  {
+                    "nameType": "OECD202",
+                    "precedingTitle": "Dr",
+                    "titles": ["Prof"],
+                    "firstName": {
+                      "value": "Alex",
+                      "xnlNameType": "Given"
+                    },
+                    "middleNames": [
+                      {
+                        "value": "Test",
+                        "xnlNameType": "Middle"
+                      }
+                    ],
+                    "namePrefix": {
+                      "value": "van",
+                      "xnlNameType": "Prefix"
+                    },
+                    "lastName": {
+                      "value": "Example",
+                      "xnlNameType": "Family"
+                    },
+                    "generationIdentifiers": ["III"],
+                    "suffixes": ["Jr"],
+                    "generalSuffix": "Esq"
+                  }
+                ],
+                "addresses": [
+                  {
+                    "legalAddressType": "OECD301",
+                    "countryCode": "FR",
+                    "addressFix": {
+                      "street": "1 Example Street",
+                      "buildingIdentifier": "Building A",
+                      "suiteIdentifier": "Suite 1",
+                      "floorIdentifier": "Floor 2",
+                      "districtName": "Example District",
+                      "pob": "PO Box 1",
+                      "postCode": "00000",
+                      "city": "Paris",
+                      "countrySubentity": "Example Region"
+                    },
+                    "additionalAddressInfo": "Test address for fixtures"
+                  }
+                ],
+                "nationalities": ["FR"],
+                "birthInfo": {
+                  "birthDate": "1985-06-15",
+                  "birthPlace": {
+                    "city": "Example City",
+                    "countryInfo": {
+                      "formerCountryName": "Example Former Country"
+                    }
+                  }
+                }
+              },
+              "ctrlgPersonTypes": ["CARF802"]
+            }
+          ],
+          "relevantTransactions": [
+            {
+              "cryptoAsset": "BTC",
+              "category": "CryptoToCryptoIn",
+              "entries": [
+                {
+                  "exchangeType": "CARF401",
+                  "numberOfTransactions": 1,
+                  "amount": {
+                    "value": "1.00",
+                    "currCode": "EUR"
+                  },
+                  "numberOfUnits": "1"
+                }
+              ]
+            },
+            {
+              "cryptoAsset": "BTC",
+              "category": "CryptoToCryptoOut",
+              "entries": [
+                {
+                  "exchangeType": "CARF401",
+                  "numberOfTransactions": 1,
+                  "amount": {
+                    "value": "1.00",
+                    "currCode": "EUR"
+                  },
+                  "numberOfUnits": "1"
+                }
+              ]
+            },
+            {
+              "cryptoAsset": "BTC",
+              "category": "CryptoFiatIn",
+              "entries": [
+                {
+                  "exchangeType": "CARF401",
+                  "numberOfTransactions": 1,
+                  "amount": {
+                    "value": "1.00",
+                    "currCode": "EUR"
+                  },
+                  "numberOfUnits": "1"
+                }
+              ]
+            },
+            {
+              "cryptoAsset": "BTC",
+              "category": "CryptoFiatOut",
+              "entries": [
+                {
+                  "exchangeType": "CARF401",
+                  "numberOfTransactions": 1,
+                  "amount": {
+                    "value": "1.00",
+                    "currCode": "EUR"
+                  },
+                  "numberOfUnits": "1"
+                }
+              ]
+            },
+            {
+              "cryptoAsset": "BTC",
+              "category": "CryptoTransferIn",
+              "entries": [
+                {
+                  "transferType": "CARF501",
+                  "numberOfTransactions": 1,
+                  "amount": {
+                    "value": "1.00",
+                    "currCode": "EUR"
+                  },
+                  "numberOfUnits": "1",
+                  "altValuation": "CARF1003"
+                }
+              ]
+            },
+            {
+              "cryptoAsset": "BTC",
+              "category": "CryptoTransferOut",
+              "entries": [
+                {
+                  "transferType": "CARF605",
+                  "numberOfTransactions": 1,
+                  "amount": {
+                    "value": "1.00",
+                    "currCode": "EUR"
+                  },
+                  "numberOfUnits": "1",
+                  "altValuation": "CARF1003"
+                }
+              ]
+            },
+            {
+              "cryptoAsset": "BTC",
+              "category": "TransferWallet",
+              "entries": [
+                {
+                  "amount": {
+                    "value": "1.00",
+                    "currCode": "EUR"
+                  },
+                  "numberOfUnits": "1",
+                  "altValuation": "CARF1003"
+                }
+              ]
+            },
+            {
+              "cryptoAsset": "BTC",
+              "category": "RRPT",
+              "entries": [
+                {
+                  "numberOfTransactions": 1,
+                  "amount": {
+                    "value": "1.00",
+                    "currCode": "EUR"
+                  },
+                  "numberOfUnits": "1"
+                }
+              ]
+            }
+          ],
+          "docSpec": {
+            "docTypeIndic": "OECD1",
+            "docRefId": "GB2027-MAXIMAL-U-0001"
+          }
+        },
+        {
+          "userId": {
+            "individual": {
+              "resCountryCodes": ["FR"],
+              "tins": [
+                {
+                  "value": "TEST-TIN-FR-0100",
+                  "issuedBy": "FR",
+                  "unknown": false
+                }
+              ],
+              "iins": [
+                {
+                  "value": "TEST-IIN-0100",
+                  "issuedBy": "FR"
+                }
+              ],
+              "names": [
+                {
+                  "nameType": "OECD202",
+                  "precedingTitle": "Dr",
+                  "titles": ["Prof"],
+                  "firstName": {
+                    "value": "Alex",
+                    "xnlNameType": "Given"
+                  },
+                  "middleNames": [
+                    {
+                      "value": "Test",
+                      "xnlNameType": "Middle"
+                    }
+                  ],
+                  "namePrefix": {
+                    "value": "van",
+                    "xnlNameType": "Prefix"
+                  },
+                  "lastName": {
+                    "value": "Example",
+                    "xnlNameType": "Family"
+                  },
+                  "generationIdentifiers": ["III"],
+                  "suffixes": ["Jr"],
+                  "generalSuffix": "Esq"
+                }
+              ],
+              "addresses": [
+                {
+                  "legalAddressType": "OECD301",
+                  "countryCode": "FR",
+                  "addressFix": {
+                    "street": "1 Example Street",
+                    "buildingIdentifier": "Building A",
+                    "suiteIdentifier": "Suite 1",
+                    "floorIdentifier": "Floor 2",
+                    "districtName": "Example District",
+                    "pob": "PO Box 1",
+                    "postCode": "00000",
+                    "city": "Paris",
+                    "countrySubentity": "Example Region"
+                  },
+                  "additionalAddressInfo": "Test address for fixtures"
+                }
+              ],
+              "nationalities": ["FR"],
+              "birthInfo": {
+                "birthDate": "1985-06-15",
+                "birthPlace": {
+                  "city": "Paris",
+                  "countryInfo": {
+                    "countryCode": "FR"
+                  }
+                }
+              }
+            }
+          },
+          "relevantTransactions": [
+            {
+              "cryptoAsset": "BTC",
+              "category": "CryptoToCryptoIn",
+              "entries": [
+                {
+                  "exchangeType": "CARF401",
+                  "numberOfTransactions": 1,
+                  "amount": {
+                    "value": "1.00",
+                    "currCode": "EUR"
+                  },
+                  "numberOfUnits": "1"
+                }
+              ]
+            }
+          ],
+          "docSpec": {
+            "docTypeIndic": "OECD1",
+            "docRefId": "GB2027-MAXIMAL-U-0002"
+          }
+        }
+      ]
+    },
+    {
+      "rcasp": {
+        "rcaspId": {
+          "entity": {
+            "resCountryCodes": ["GB"],
+            "tins": [
+              {
+                "value": "TEST-TIN-FR-0200",
+                "issuedBy": "FR"
+              }
+            ],
+            "ins": [
+              {
+                "value": "TEST-LEI-0200",
+                "issuedBy": "FR",
+                "inType": "LEI"
+              }
+            ],
+            "iins": [
+              {
+                "value": "TEST-IIN-0200",
+                "issuedBy": "FR"
+              }
+            ],
+            "names": [
+              {
+                "value": "Maximal Example SA",
+                "nameType": "OECD207"
+              }
+            ],
+            "addresses": [
+              {
+                "legalAddressType": "OECD301",
+                "countryCode": "FR",
+                "addressFix": {
+                  "street": "1 Example Street",
+                  "buildingIdentifier": "Building A",
+                  "suiteIdentifier": "Suite 1",
+                  "floorIdentifier": "Floor 2",
+                  "districtName": "Example District",
+                  "pob": "PO Box 1",
+                  "postCode": "00000",
+                  "city": "Paris",
+                  "countrySubentity": "Example Region"
+                },
+                "additionalAddressInfo": "Test address for fixtures"
+              }
+            ]
+          }
+        },
+        "nexus": "CARF902",
+        "docSpec": {
+          "docTypeIndic": "OECD1",
+          "docRefId": "GB2027-MAXIMAL-R-0002",
+          "corrMessageRefId": "GB2027FRMAXIMAL0000",
+          "corrDocRefId": "GB2027-MAXIMAL-R-0000"
+        }
+      },
+      "cryptoUsers": [
+        {
+          "userId": {
+            "individual": {
+              "resCountryCodes": ["FR"],
+              "tins": [
+                {
+                  "value": "TEST-TIN-FR-0100",
+                  "issuedBy": "FR",
+                  "unknown": false
+                }
+              ],
+              "iins": [
+                {
+                  "value": "TEST-IIN-0100",
+                  "issuedBy": "FR"
+                }
+              ],
+              "names": [
+                {
+                  "nameType": "OECD202",
+                  "precedingTitle": "Dr",
+                  "titles": ["Prof"],
+                  "firstName": {
+                    "value": "Alex",
+                    "xnlNameType": "Given"
+                  },
+                  "middleNames": [
+                    {
+                      "value": "Test",
+                      "xnlNameType": "Middle"
+                    }
+                  ],
+                  "namePrefix": {
+                    "value": "van",
+                    "xnlNameType": "Prefix"
+                  },
+                  "lastName": {
+                    "value": "Example",
+                    "xnlNameType": "Family"
+                  },
+                  "generationIdentifiers": ["III"],
+                  "suffixes": ["Jr"],
+                  "generalSuffix": "Esq"
+                }
+              ],
+              "addresses": [
+                {
+                  "legalAddressType": "OECD301",
+                  "countryCode": "FR",
+                  "addressFix": {
+                    "street": "1 Example Street",
+                    "buildingIdentifier": "Building A",
+                    "suiteIdentifier": "Suite 1",
+                    "floorIdentifier": "Floor 2",
+                    "districtName": "Example District",
+                    "pob": "PO Box 1",
+                    "postCode": "00000",
+                    "city": "Paris",
+                    "countrySubentity": "Example Region"
+                  },
+                  "additionalAddressInfo": "Test address for fixtures"
+                }
+              ],
+              "nationalities": ["FR"],
+              "birthInfo": {
+                "birthDate": "1985-06-15",
+                "birthPlace": {
+                  "city": "Example City",
+                  "citySubentity": "Example Quarter",
+                  "countryInfo": {
+                    "formerCountryName": "Example Former Country"
+                  }
+                }
+              }
+            }
+          },
+          "relevantTransactions": [
+            {
+              "cryptoAsset": "BTC",
+              "category": "CryptoToCryptoIn",
+              "entries": [
+                {
+                  "exchangeType": "CARF401",
+                  "numberOfTransactions": 1,
+                  "amount": {
+                    "value": "1.00",
+                    "currCode": "EUR"
+                  },
+                  "numberOfUnits": "1"
+                }
+              ]
+            }
+          ],
+          "docSpec": {
+            "docTypeIndic": "OECD1",
+            "docRefId": "GB2027-MAXIMAL-U-0003",
+            "corrMessageRefId": "GB2027FRMAXIMAL0000",
+            "corrDocRefId": "GB2027-MAXIMAL-U-0000"
+          }
+        },
+        {
+          "userId": {
+            "entity": {
+              "resCountryCodes": ["FR"],
+              "tins": [
+                {
+                  "value": "TEST-TIN-FR-0200",
+                  "issuedBy": "FR"
+                }
+              ],
+              "ins": [
+                {
+                  "value": "TEST-LEI-0200",
+                  "issuedBy": "FR",
+                  "inType": "LEI"
+                }
+              ],
+              "iins": [
+                {
+                  "value": "TEST-IIN-0200",
+                  "issuedBy": "FR"
+                }
+              ],
+              "names": [
+                {
+                  "value": "Maximal Example SA",
+                  "nameType": "OECD207"
+                }
+              ],
+              "addresses": [
+                {
+                  "legalAddressType": "OECD301",
+                  "countryCode": "FR",
+                  "addressFix": {
+                    "street": "1 Example Street",
+                    "buildingIdentifier": "Building A",
+                    "suiteIdentifier": "Suite 1",
+                    "floorIdentifier": "Floor 2",
+                    "districtName": "Example District",
+                    "pob": "PO Box 1",
+                    "postCode": "00000",
+                    "city": "Paris",
+                    "countrySubentity": "Example Region"
+                  },
+                  "additionalAddressInfo": "Test address for fixtures"
+                }
+              ]
+            }
+          },
+          "controllingPersons": [
+            {
+              "individual": {
+                "resCountryCodes": ["FR"],
+                "tins": [
+                  {
+                    "value": "TEST-TIN-FR-0100",
+                    "issuedBy": "FR",
+                    "unknown": false
+                  }
+                ],
+                "iins": [
+                  {
+                    "value": "TEST-IIN-0100",
+                    "issuedBy": "FR"
+                  }
+                ],
+                "names": [
+                  {
+                    "nameType": "OECD202",
+                    "precedingTitle": "Dr",
+                    "titles": ["Prof"],
+                    "firstName": {
+                      "value": "Alex",
+                      "xnlNameType": "Given"
+                    },
+                    "middleNames": [
+                      {
+                        "value": "Test",
+                        "xnlNameType": "Middle"
+                      }
+                    ],
+                    "namePrefix": {
+                      "value": "van",
+                      "xnlNameType": "Prefix"
+                    },
+                    "lastName": {
+                      "value": "Example",
+                      "xnlNameType": "Family"
+                    },
+                    "generationIdentifiers": ["III"],
+                    "suffixes": ["Jr"],
+                    "generalSuffix": "Esq"
+                  }
+                ],
+                "addresses": [
+                  {
+                    "legalAddressType": "OECD301",
+                    "countryCode": "FR",
+                    "addressFix": {
+                      "street": "1 Example Street",
+                      "buildingIdentifier": "Building A",
+                      "suiteIdentifier": "Suite 1",
+                      "floorIdentifier": "Floor 2",
+                      "districtName": "Example District",
+                      "pob": "PO Box 1",
+                      "postCode": "00000",
+                      "city": "Paris",
+                      "countrySubentity": "Example Region"
+                    },
+                    "additionalAddressInfo": "Test address for fixtures"
+                  }
+                ],
+                "nationalities": ["FR"],
+                "birthInfo": {
+                  "birthDate": "1985-06-15",
+                  "birthPlace": {
+                    "city": "Paris",
+                    "citySubentity": "Example Quarter",
+                    "countryInfo": {
+                      "countryCode": "FR"
+                    }
+                  }
+                }
+              },
+              "ctrlgPersonTypes": ["CARF802"]
+            }
+          ],
+          "relevantTransactions": [
+            {
+              "cryptoAsset": "BTC",
+              "category": "CryptoToCryptoIn",
+              "entries": [
+                {
+                  "exchangeType": "CARF401",
+                  "numberOfTransactions": 1,
+                  "amount": {
+                    "value": "1.00",
+                    "currCode": "EUR"
+                  },
+                  "numberOfUnits": "1"
+                }
+              ]
+            }
+          ],
+          "docSpec": {
+            "docTypeIndic": "OECD1",
+            "docRefId": "GB2027-MAXIMAL-U-0004"
+          }
+        }
+      ]
+    },
+    {
+      "rcasp": {
+        "rcaspId": {
+          "individual": {
+            "resCountryCodes": ["GB"],
+            "tins": [
+              {
+                "value": "TEST-TIN-FR-0100",
+                "issuedBy": "FR",
+                "unknown": false
+              }
+            ],
+            "iins": [
+              {
+                "value": "TEST-IIN-0100",
+                "issuedBy": "FR"
+              }
+            ],
+            "names": [
+              {
+                "nameType": "OECD202",
+                "precedingTitle": "Dr",
+                "titles": ["Prof"],
+                "firstName": {
+                  "value": "Alex",
+                  "xnlNameType": "Given"
+                },
+                "middleNames": [
+                  {
+                    "value": "Test",
+                    "xnlNameType": "Middle"
+                  }
+                ],
+                "namePrefix": {
+                  "value": "van",
+                  "xnlNameType": "Prefix"
+                },
+                "lastName": {
+                  "value": "Example",
+                  "xnlNameType": "Family"
+                },
+                "generationIdentifiers": ["III"],
+                "suffixes": ["Jr"],
+                "generalSuffix": "Esq"
+              }
+            ],
+            "addresses": [
+              {
+                "legalAddressType": "OECD301",
+                "countryCode": "FR",
+                "addressFix": {
+                  "street": "1 Example Street",
+                  "buildingIdentifier": "Building A",
+                  "suiteIdentifier": "Suite 1",
+                  "floorIdentifier": "Floor 2",
+                  "districtName": "Example District",
+                  "pob": "PO Box 1",
+                  "postCode": "00000",
+                  "city": "Paris",
+                  "countrySubentity": "Example Region"
+                },
+                "additionalAddressInfo": "Test address for fixtures"
+              }
+            ],
+            "nationalities": ["FR"],
+            "birthInfo": {
+              "birthDate": "1900-01-01",
+              "birthPlace": {
+                "city": "Example City",
+                "countryInfo": {
+                  "formerCountryName": "Example Former Country"
+                }
+              }
+            }
+          }
+        },
+        "nexus": "CARF904",
+        "otherNexus": {
+          "nexus": "CARF901",
+          "resCountryCode": "FR"
+        },
+        "docSpec": {
+          "docTypeIndic": "OECD1",
+          "docRefId": "GB2027-MAXIMAL-R-0003"
+        }
+      }
+    }
+  ]
+}
