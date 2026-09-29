@@ -1,0 +1,26 @@
+carf-xml
+Copyright 2026 ZettaCore Labs
+
+This product is licensed under the Apache License, Version 2.0 (see LICENSE).
+
+It is not an OECD product, and the OECD does not endorse it.
+
+Third-party material
+--------------------
+
+src/status/codes.ts contains the file and record error codes, names, descriptions and
+requested actions copied without change from:
+  OECD (2025), Crypto-Asset Reporting Framework Status Message XML Schema: User Guide for
+  Tax Administrations, OECD Publishing, Paris, https://doi.org/10.1787/e528d7f5-en.
+  Licensed under Creative Commons Attribution 4.0 International
+  (https://creativecommons.org/licenses/by/4.0/).
+
+The plain-language element names in src/translate/labels.ts and the rule descriptions in
+src/rules/catalogue.ts are based on the Status Message user guide above and on:
+  OECD (2025), Crypto-Asset Reporting Framework XML Schema (July 2025): User Guide for Tax
+  Administrations, OECD Publishing, Paris, https://doi.org/10.1787/6e60235b-en.
+  Licensed under Creative Commons Attribution 4.0 International.
+
+The code lists and their descriptions in src/generated/ are derived from the OECD CARF XML
+Schema v1.5 (July 2025) and the CARF Status Message XML Schema v1.1 (June 2025). The OECD
+XSD files themselves are not included in this package.
