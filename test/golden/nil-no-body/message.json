@@ -1,0 +1,11 @@
+{
+  "messageSpec": {
+    "transmittingCountry": "GB",
+    "receivingCountry": "FR",
+    "messageType": "CARF",
+    "messageRefId": "GB2027FRGOLDEN0007",
+    "messageTypeIndic": "CARF703",
+    "reportingPeriod": "2027-12-31",
+    "timestamp": "2028-03-01T09:00:00"
+  }
+}

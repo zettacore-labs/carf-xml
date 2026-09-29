@@ -1,0 +1,107 @@
+{
+  "messageSpec": {
+    "transmittingCountry": "GB",
+    "receivingCountry": "FR",
+    "messageType": "CARF",
+    "messageRefId": "GB2027FRGOLDEN0004",
+    "messageTypeIndic": "CARF702",
+    "reportingPeriod": "2027-12-31",
+    "timestamp": "2028-03-01T09:00:00"
+  },
+  "carfBodies": [
+    {
+      "rcasp": {
+        "rcaspId": {
+          "entity": {
+            "resCountryCodes": ["GB"],
+            "tins": [
+              {
+                "value": "TEST-RCASP-0001",
+                "issuedBy": "GB"
+              }
+            ],
+            "names": [
+              {
+                "value": "Example Exchange Ltd"
+              }
+            ],
+            "addresses": [
+              {
+                "countryCode": "GB",
+                "addressFix": {
+                  "street": "2 Sample Road",
+                  "postCode": "00001",
+                  "city": "London"
+                }
+              }
+            ]
+          }
+        },
+        "nexus": "CARF901",
+        "docSpec": {
+          "docTypeIndic": "OECD0",
+          "docRefId": "GB2027-GOLDEN-R-0001"
+        }
+      },
+      "cryptoUsers": [
+        {
+          "userId": {
+            "individual": {
+              "resCountryCodes": ["FR"],
+              "tins": [
+                {
+                  "value": "TEST-TIN-FR-0001",
+                  "issuedBy": "FR"
+                }
+              ],
+              "names": [
+                {
+                  "firstName": {
+                    "value": "Alex"
+                  },
+                  "lastName": {
+                    "value": "Example"
+                  }
+                }
+              ],
+              "addresses": [
+                {
+                  "countryCode": "FR",
+                  "addressFix": {
+                    "street": "1 Example Street",
+                    "postCode": "00000",
+                    "city": "Paris"
+                  }
+                }
+              ],
+              "birthInfo": {
+                "birthDate": "1985-06-15"
+              }
+            }
+          },
+          "relevantTransactions": [
+            {
+              "cryptoAsset": "BTC",
+              "category": "CryptoFiatIn",
+              "entries": [
+                {
+                  "numberOfTransactions": 3,
+                  "amount": {
+                    "value": "15100.00",
+                    "currCode": "EUR"
+                  },
+                  "numberOfUnits": "0.5"
+                }
+              ]
+            }
+          ],
+          "docSpec": {
+            "docTypeIndic": "OECD2",
+            "docRefId": "GB2027-GOLDEN-U-0101",
+            "corrDocRefId": "GB2027-GOLDEN-U-0001"
+          }
+        }
+      ]
+    }
+  ]
+}

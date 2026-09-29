@@ -1,0 +1,205 @@
+{
+  "messageSpec": {
+    "transmittingCountry": "GB",
+    "receivingCountry": "FR",
+    "messageType": "CARF",
+    "messageRefId": "GB2027FRGOLDEN0001",
+    "messageTypeIndic": "CARF701",
+    "reportingPeriod": "2027-12-31",
+    "timestamp": "2028-03-01T09:00:00"
+  },
+  "carfBodies": [
+    {
+      "rcasp": {
+        "rcaspId": {
+          "entity": {
+            "resCountryCodes": ["GB"],
+            "tins": [
+              {
+                "value": "TEST-RCASP-0001",
+                "issuedBy": "GB"
+              }
+            ],
+            "names": [
+              {
+                "value": "Example Exchange Ltd"
+              }
+            ],
+            "addresses": [
+              {
+                "countryCode": "GB",
+                "addressFix": {
+                  "street": "2 Sample Road",
+                  "postCode": "00001",
+                  "city": "London"
+                }
+              }
+            ]
+          }
+        },
+        "nexus": "CARF901",
+        "docSpec": {
+          "docTypeIndic": "OECD1",
+          "docRefId": "GB2027-GOLDEN-R-0001"
+        }
+      },
+      "cryptoUsers": [
+        {
+          "userId": {
+            "individual": {
+              "resCountryCodes": ["FR"],
+              "tins": [
+                {
+                  "value": "TEST-TIN-FR-0001",
+                  "issuedBy": "FR"
+                }
+              ],
+              "names": [
+                {
+                  "firstName": {
+                    "value": "Alex"
+                  },
+                  "lastName": {
+                    "value": "Example"
+                  }
+                }
+              ],
+              "addresses": [
+                {
+                  "countryCode": "FR",
+                  "addressFix": {
+                    "street": "1 Example Street",
+                    "postCode": "00000",
+                    "city": "Paris"
+                  }
+                }
+              ],
+              "birthInfo": {
+                "birthDate": "1985-06-15"
+              }
+            }
+          },
+          "relevantTransactions": [
+            {
+              "cryptoAsset": "BTC",
+              "category": "CryptoFiatIn",
+              "entries": [
+                {
+                  "numberOfTransactions": 3,
+                  "amount": {
+                    "value": "15000.00",
+                    "currCode": "EUR"
+                  },
+                  "numberOfUnits": "0.5"
+                }
+              ]
+            },
+            {
+              "cryptoAsset": "BTC",
+              "category": "CryptoFiatOut",
+              "entries": [
+                {
+                  "numberOfTransactions": 1,
+                  "amount": {
+                    "value": "4200.10",
+                    "currCode": "EUR"
+                  },
+                  "numberOfUnits": "0.1"
+                }
+              ]
+            }
+          ],
+          "docSpec": {
+            "docTypeIndic": "OECD1",
+            "docRefId": "GB2027-GOLDEN-U-0001"
+          }
+        },
+        {
+          "userId": {
+            "entity": {
+              "resCountryCodes": ["FR"],
+              "tins": [
+                {
+                  "value": "TEST-TIN-FR-0002",
+                  "issuedBy": "FR"
+                }
+              ],
+              "names": [
+                {
+                  "value": "Sample Holdings SAS"
+                }
+              ],
+              "addresses": [
+                {
+                  "countryCode": "FR",
+                  "addressFix": {
+                    "street": "2 Sample Road",
+                    "postCode": "00001",
+                    "city": "Lyon"
+                  }
+                }
+              ]
+            }
+          },
+          "controllingPersons": [
+            {
+              "individual": {
+                "resCountryCodes": ["FR"],
+                "tins": [
+                  {
+                    "value": "TEST-TIN-FR-0003",
+                    "issuedBy": "FR"
+                  }
+                ],
+                "names": [
+                  {
+                    "firstName": {
+                      "value": "Sam"
+                    },
+                    "lastName": {
+                      "value": "Sample"
+                    }
+                  }
+                ],
+                "addresses": [
+                  {
+                    "countryCode": "FR",
+                    "addressFix": {
+                      "street": "1 Example Street",
+                      "postCode": "00000",
+                      "city": "Lyon"
+                    }
+                  }
+                ],
+                "birthInfo": {
+                  "birthDate": "1979-02-01"
+                }
+              },
+              "ctrlgPersonTypes": ["CARF801", "CARF803"]
+            }
+          ],
+          "relevantTransactions": [
+            {
+              "cryptoAsset": "ETH",
+              "category": "CryptoToCryptoIn",
+              "entries": [
+                {
+                  "numberOfTransactions": 2,
+                  "amount": {
+                    "value": "8000",
+                    "currCode": "EUR"
+                  },
+                  "numberOfUnits": "3.25"
+                }
+              ]
+            }
+          ],
+          "docSpec": {
+            "docTypeIndic": "OECD1",
+            "docRefId": "GB2027-GOLDEN-U-0002"
+          }
+        }
+      ]
+    }
+  ]
+}

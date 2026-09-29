@@ -1,0 +1,229 @@
+{
+  "messageSpec": {
+    "transmittingCountry": "GB",
+    "receivingCountry": "FR",
+    "messageType": "CARF",
+    "messageRefId": "GB2027FRGOLDEN0002",
+    "messageTypeIndic": "CARF701",
+    "reportingPeriod": "2027-12-31",
+    "timestamp": "2028-03-01T09:00:00"
+  },
+  "carfBodies": [
+    {
+      "rcasp": {
+        "rcaspId": {
+          "entity": {
+            "resCountryCodes": ["GB"],
+            "tins": [
+              {
+                "value": "TEST-RCASP-0001",
+                "issuedBy": "GB"
+              }
+            ],
+            "names": [
+              {
+                "value": "Example Exchange Ltd"
+              }
+            ],
+            "addresses": [
+              {
+                "countryCode": "GB",
+                "addressFix": {
+                  "street": "2 Sample Road",
+                  "postCode": "00001",
+                  "city": "London"
+                }
+              }
+            ]
+          }
+        },
+        "nexus": "CARF901",
+        "docSpec": {
+          "docTypeIndic": "OECD1",
+          "docRefId": "GB2027-GOLDEN-R-0002"
+        }
+      },
+      "cryptoUsers": [
+        {
+          "userId": {
+            "individual": {
+              "resCountryCodes": ["FR"],
+              "tins": [
+                {
+                  "value": "TEST-TIN-FR-0001",
+                  "issuedBy": "FR"
+                }
+              ],
+              "names": [
+                {
+                  "firstName": {
+                    "value": "Alex"
+                  },
+                  "lastName": {
+                    "value": "Example"
+                  }
+                }
+              ],
+              "addresses": [
+                {
+                  "countryCode": "FR",
+                  "addressFix": {
+                    "street": "1 Example Street",
+                    "postCode": "00000",
+                    "city": "Paris"
+                  }
+                }
+              ],
+              "birthInfo": {
+                "birthDate": "1985-06-15"
+              }
+            }
+          },
+          "relevantTransactions": [
+            {
+              "cryptoAsset": "BTC",
+              "category": "CryptoToCryptoIn",
+              "entries": [
+                {
+                  "exchangeType": "CARF401",
+                  "numberOfTransactions": 1,
+                  "amount": {
+                    "value": "1234.565",
+                    "currCode": "EUR"
+                  },
+                  "numberOfUnits": "0.12345678"
+                }
+              ]
+            },
+            {
+              "cryptoAsset": "BTC",
+              "category": "CryptoToCryptoOut",
+              "entries": [
+                {
+                  "exchangeType": "CARF402",
+                  "numberOfTransactions": 2,
+                  "amount": {
+                    "value": "999.994",
+                    "currCode": "EUR"
+                  },
+                  "numberOfUnits": "0.0200000"
+                }
+              ]
+            },
+            {
+              "cryptoAsset": "BTC",
+              "category": "CryptoFiatIn",
+              "entries": [
+                {
+                  "exchangeType": "CARF403",
+                  "numberOfTransactions": 1,
+                  "amount": {
+                    "value": "0",
+                    "currCode": "EUR"
+                  },
+                  "numberOfUnits": "0.000001"
+                },
+                {
+                  "exchangeType": "CARF404",
+                  "numberOfTransactions": 4,
+                  "amount": {
+                    "value": "250.5",
+                    "currCode": "EUR"
+                  },
+                  "numberOfUnits": "0.01"
+                }
+              ]
+            },
+            {
+              "cryptoAsset": "BTC",
+              "category": "CryptoFiatOut",
+              "entries": [
+                {
+                  "numberOfTransactions": 5,
+                  "amount": {
+                    "value": "72000.00",
+                    "currCode": "EUR"
+                  },
+                  "numberOfUnits": "1.2"
+                }
+              ]
+            },
+            {
+              "cryptoAsset": "BTC",
+              "category": "CryptoTransferIn",
+              "entries": [
+                {
+                  "transferType": "CARF505",
+                  "numberOfTransactions": 2,
+                  "amount": {
+                    "value": "3100.00",
+                    "currCode": "EUR"
+                  },
+                  "numberOfUnits": "0.05",
+                  "altValuation": "CARF1001"
+                },
+                {
+                  "transferType": "CARF509",
+                  "numberOfTransactions": 1,
+                  "amount": {
+                    "value": "10.00",
+                    "currCode": "EUR"
+                  },
+                  "numberOfUnits": "0.0002"
+                }
+              ]
+            },
+            {
+              "cryptoAsset": "BTC",
+              "category": "CryptoTransferOut",
+              "entries": [
+                {
+                  "transferType": "CARF601",
+                  "numberOfTransactions": 1,
+                  "amount": {
+                    "value": "620.00",
+                    "currCode": "EUR"
+                  },
+                  "numberOfUnits": "0.01",
+                  "altValuation": "CARF1002"
+                }
+              ]
+            },
+            {
+              "cryptoAsset": "BTC",
+              "category": "TransferWallet",
+              "entries": [
+                {
+                  "amount": {
+                    "value": "1500.00",
+                    "currCode": "EUR"
+                  },
+                  "numberOfUnits": "0.025",
+                  "altValuation": "CARF1004"
+                }
+              ]
+            },
+            {
+              "cryptoAsset": "BTC",
+              "category": "RRPT",
+              "entries": [
+                {
+                  "numberOfTransactions": 1,
+                  "amount": {
+                    "value": "61000.00",
+                    "currCode": "EUR"
+                  },
+                  "numberOfUnits": "1"
+                }
+              ]
+            }
+          ],
+          "docSpec": {
+            "docTypeIndic": "OECD1",
+            "docRefId": "GB2027-GOLDEN-U-0003"
+          }
+        }
+      ]
+    }
+  ]
+}

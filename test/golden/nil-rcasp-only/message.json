@@ -1,0 +1,48 @@
+{
+  "messageSpec": {
+    "transmittingCountry": "GB",
+    "receivingCountry": "GB",
+    "messageType": "CARF",
+    "messageRefId": "GB2027GBGOLDEN0006",
+    "messageTypeIndic": "CARF703",
+    "reportingPeriod": "2027-12-31",
+    "timestamp": "2028-03-01T09:00:00"
+  },
+  "carfBodies": [
+    {
+      "rcasp": {
+        "rcaspId": {
+          "entity": {
+            "resCountryCodes": ["GB"],
+            "tins": [
+              {
+                "value": "TEST-RCASP-0001",
+                "issuedBy": "GB"
+              }
+            ],
+            "names": [
+              {
+                "value": "Example Exchange Ltd"
+              }
+            ],
+            "addresses": [
+              {
+                "countryCode": "GB",
+                "addressFix": {
+                  "street": "2 Sample Road",
+                  "postCode": "00001",
+                  "city": "London"
+                }
+              }
+            ]
+          }
+        },
+        "nexus": "CARF901",
+        "docSpec": {
+          "docTypeIndic": "OECD1",
+          "docRefId": "GB2027-GOLDEN-R-0006"
+        }
+      }
+    }
+  ]
+}

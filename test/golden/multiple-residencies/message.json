@@ -1,0 +1,199 @@
+{
+  "messageSpec": {
+    "transmittingCountry": "GB",
+    "receivingCountry": "FR",
+    "messageType": "CARF",
+    "messageRefId": "GB2027FRGOLDEN0003",
+    "messageTypeIndic": "CARF701",
+    "reportingPeriod": "2027-12-31",
+    "timestamp": "2028-03-01T09:00:00"
+  },
+  "carfBodies": [
+    {
+      "rcasp": {
+        "rcaspId": {
+          "entity": {
+            "resCountryCodes": ["GB"],
+            "tins": [
+              {
+                "value": "TEST-RCASP-0001",
+                "issuedBy": "GB"
+              }
+            ],
+            "names": [
+              {
+                "value": "Example Exchange Ltd"
+              }
+            ],
+            "addresses": [
+              {
+                "countryCode": "GB",
+                "addressFix": {
+                  "street": "2 Sample Road",
+                  "postCode": "00001",
+                  "city": "London"
+                }
+              }
+            ]
+          }
+        },
+        "nexus": "CARF901",
+        "docSpec": {
+          "docTypeIndic": "OECD1",
+          "docRefId": "GB2027-GOLDEN-R-0003"
+        }
+      },
+      "cryptoUsers": [
+        {
+          "userId": {
+            "individual": {
+              "resCountryCodes": ["FR", "DE"],
+              "tins": [
+                {
+                  "value": "TEST-TIN-FR-0004",
+                  "issuedBy": "FR"
+                },
+                {
+                  "value": "TEST-TIN-DE-0004",
+                  "issuedBy": "DE"
+                }
+              ],
+              "names": [
+                {
+                  "firstName": {
+                    "value": "Robin"
+                  },
+                  "lastName": {
+                    "value": "Placeholder"
+                  }
+                }
+              ],
+              "addresses": [
+                {
+                  "countryCode": "FR",
+                  "addressFix": {
+                    "street": "1 Example Street",
+                    "postCode": "00000",
+                    "city": "Nice"
+                  }
+                }
+              ],
+              "birthInfo": {
+                "birthDate": "1990-11-30"
+              }
+            }
+          },
+          "relevantTransactions": [
+            {
+              "cryptoAsset": "SOL",
+              "category": "CryptoFiatIn",
+              "entries": [
+                {
+                  "numberOfTransactions": 6,
+                  "amount": {
+                    "value": "900.00",
+                    "currCode": "EUR"
+                  },
+                  "numberOfUnits": "7.5"
+                }
+              ]
+            }
+          ],
+          "docSpec": {
+            "docTypeIndic": "OECD1",
+            "docRefId": "GB2027-GOLDEN-U-0004"
+          }
+        },
+        {
+          "userId": {
+            "entity": {
+              "resCountryCodes": ["FR", "LU"],
+              "tins": [
+                {
+                  "value": "NOTIN",
+                  "unknown": true
+                }
+              ],
+              "names": [
+                {
+                  "value": "Demo Ventures SARL"
+                }
+              ],
+              "addresses": [
+                {
+                  "countryCode": "LU",
+                  "addressFix": {
+                    "street": "2 Sample Road",
+                    "postCode": "00001",
+                    "city": "Luxembourg"
+                  }
+                }
+              ]
+            }
+          },
+          "controllingPersons": [
+            {
+              "individual": {
+                "resCountryCodes": ["FR", "DE"],
+                "tins": [
+                  {
+                    "value": "TEST-TIN-FR-0006",
+                    "issuedBy": "FR"
+                  },
+                  {
+                    "value": "TEST-TIN-DE-0006",
+                    "issuedBy": "DE"
+                  }
+                ],
+                "names": [
+                  {
+                    "firstName": {
+                      "value": "Jamie"
+                    },
+                    "lastName": {
+                      "value": "Fictional"
+                    }
+                  }
+                ],
+                "addresses": [
+                  {
+                    "countryCode": "DE",
+                    "addressFix": {
+                      "street": "1 Example Street",
+                      "postCode": "00000",
+                      "city": "Berlin"
+                    }
+                  }
+                ],
+                "birthInfo": {
+                  "birthDate": "1970-07-07"
+                }
+              },
+              "ctrlgPersonTypes": ["CARF804", "CARF807"]
+            }
+          ],
+          "relevantTransactions": [
+            {
+              "cryptoAsset": "SOL",
+              "category": "CryptoFiatOut",
+              "entries": [
+                {
+                  "numberOfTransactions": 1,
+                  "amount": {
+                    "value": "300.00",
+                    "currCode": "EUR"
+                  },
+                  "numberOfUnits": "2"
+                }
+              ]
+            }
+          ],
+          "docSpec": {
+            "docTypeIndic": "OECD1",
+            "docRefId": "GB2027-GOLDEN-U-0005"
+          }
+        }
+      ]
+    }
+  ]
+}
