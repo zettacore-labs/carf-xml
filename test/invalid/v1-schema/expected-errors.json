@@ -1,0 +1,25 @@
+[
+  {
+    "layer": "V1",
+    "code": "XSD_INVALID_VALUE",
+    "line": 9,
+    "xpath": "/CARF_OECD/MessageSpec[1]/ReportingPeriod[1]",
+    "humanMessage": "Reporting period (last day) is not a date (YYYY-MM-DD)."
+  },
+  {
+    "layer": "V1",
+    "code": "XSD_MISSING_ELEMENT",
+    "line": 46,
+    "xpath": "/CARF_OECD/CARFBody[1]/CryptoUsers[1]/UserID[1]/Individual[1]/Address[1]/AddressFix[1]",
+    "recordRef": "GB2027-GOLDEN-U-0001",
+    "humanMessage": "Crypto-asset user record GB2027-GOLDEN-U-0001: address in fixed format is missing city."
+  },
+  {
+    "layer": "V1",
+    "code": "XSD_INVALID_CODE",
+    "line": 68,
+    "xpath": "/CARF_OECD/CARFBody[1]/CryptoUsers[1]/RelevantTransactions[2]/CryptoFiatOut[1]/Amount[1]",
+    "recordRef": "GB2027-GOLDEN-U-0001",
+    "humanMessage": "Crypto-asset user record GB2027-GOLDEN-U-0001: currency code of amount has the value 'EURO', which is not an allowed code."
+  }
+]

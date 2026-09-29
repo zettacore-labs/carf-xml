@@ -1,0 +1,63 @@
+[
+  {
+    "layer": "V2",
+    "code": "V2-006",
+    "line": 10,
+    "xpath": "/CARF_OECD/MessageSpec[1]/Timestamp[1]",
+    "humanMessage": "The timestamp is not in the format YYYY-MM-DDThh:mm:ss or YYYY-MM-DDThh:mm:ss.nnn."
+  },
+  {
+    "layer": "V2",
+    "code": "V2-008",
+    "officialCode": "60001",
+    "line": 80,
+    "xpath": "/CARF_OECD/CARFBody[1]/CryptoUsers[1]/RelevantTransactions[1]/CryptoFiatOut[1]/Amount[1]",
+    "recordRef": "GB2027-INVALID-U-0001",
+    "humanMessage": "Crypto-asset user record GB2027-INVALID-U-0001: the amount is negative."
+  },
+  {
+    "layer": "V2",
+    "code": "V2-009",
+    "officialCode": "60002",
+    "line": 55,
+    "xpath": "/CARF_OECD/CARFBody[1]/CryptoUsers[1]/ControllingPerson[1]",
+    "recordRef": "GB2027-INVALID-U-0001",
+    "humanMessage": "Crypto-asset user record GB2027-INVALID-U-0001: an individual crypto-asset user has a controlling person."
+  },
+  {
+    "layer": "V2",
+    "code": "V2-010",
+    "officialCode": "60003",
+    "line": 36,
+    "xpath": "/CARF_OECD/CARFBody[1]/CryptoUsers[1]/UserID[1]/Individual[1]",
+    "recordRef": "GB2027-INVALID-U-0001",
+    "humanMessage": "Crypto-asset user record GB2027-INVALID-U-0001: the user has no country of residence equal to the receiving country FR."
+  },
+  {
+    "layer": "V2",
+    "code": "V2-014",
+    "officialCode": "60007",
+    "line": 51,
+    "xpath": "/CARF_OECD/CARFBody[1]/CryptoUsers[1]/UserID[1]/Individual[1]/BirthInfo[1]/BirthDate[1]",
+    "recordRef": "GB2027-INVALID-U-0001",
+    "humanMessage": "Crypto-asset user record GB2027-INVALID-U-0001: the date of birth is before 1900 or after the reporting period."
+  },
+  {
+    "layer": "V2",
+    "code": "V2-015",
+    "officialCode": "60008",
+    "line": 38,
+    "xpath": "/CARF_OECD/CARFBody[1]/CryptoUsers[1]/UserID[1]/Individual[1]/TIN[1]",
+    "recordRef": "GB2027-INVALID-U-0001",
+    "humanMessage": "Crypto-asset user record GB2027-INVALID-U-0001: a TIN flagged unknown does not have the value \"NOTIN\"."
+  },
+  {
+    "layer": "V2",
+    "code": "V2-019",
+    "officialCode": "80004",
+    "line": 84,
+    "xpath": "/CARF_OECD/CARFBody[1]/CryptoUsers[1]/DocSpec[1]",
+    "recordRef": "GB2027-INVALID-U-0001",
+    "humanMessage": "Crypto-asset user record GB2027-INVALID-U-0001: a new record (OECD1) refers to a corrected record (CorrDocRefId)."
+  }
+]

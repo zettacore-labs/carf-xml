@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<carf:CARF_OECD xmlns:carf="urn:oecd:ties:carf:v1" xmlns:stf="urn:oecd:ties:carfstf:v5" xmlns:iso="urn:oecd:ties:isocarftypes:v1">
+  <carf:MessageSpec>
+    <carf:TransmittingCountry>GB</carf:TransmittingCountry>
+    <carf:ReceivingCountry>FR</carf:ReceivingCountry>
+    <carf:MessageType>CARF</carf:MessageType>
+    <carf:MessageRefId>GB2027FRGOLDEN0001</carf:MessageRefId>
+    <carf:MessageTypeIndic>CARF701</carf:MessageTypeIndic>
+    <carf:ReportingPeriod>2027-12-32</carf:ReportingPeriod>
+    <carf:Timestamp>2028-03-01T09:00:00</carf:Timestamp>
+  </carf:MessageSpec>
+  <carf:CARFBody>
+    <carf:RCASP>
+      <carf:RCASP_ID>
+        <carf:Entity>
+          <carf:ResCountryCode>GB</carf:ResCountryCode>
+          <carf:TIN issuedBy="GB">TEST-RCASP-0001</carf:TIN>
+          <carf:Name>Example Exchange Ltd</carf:Name>
+          <carf:Address>
+            <carf:CountryCode>GB</carf:CountryCode>
+            <carf:AddressFix>
+              <carf:Street>2 Sample Road</carf:Street>
+              <carf:PostCode>00001</carf:PostCode>
+              <carf:City>London</carf:City>
+            </carf:AddressFix>
+          </carf:Address>
+        </carf:Entity>
+      </carf:RCASP_ID>
+      <carf:Nexus>CARF901</carf:Nexus>
+      <carf:DocSpec>
+        <stf:DocTypeIndic>OECD1</stf:DocTypeIndic>
+        <stf:DocRefId>GB2027-GOLDEN-R-0001</stf:DocRefId>
+      </carf:DocSpec>
+    </carf:RCASP>
+    <carf:CryptoUsers>
+      <carf:UserID>
+        <carf:Individual>
+          <carf:ResCountryCode>FR</carf:ResCountryCode>
+          <carf:TIN issuedBy="FR">TEST-TIN-FR-0001</carf:TIN>
+          <carf:Name>
+            <carf:FirstName>Alex</carf:FirstName>
+            <carf:LastName>Example</carf:LastName>
+          </carf:Name>
+          <carf:Address>
+            <carf:CountryCode>FR</carf:CountryCode>
+            <carf:AddressFix>
+              <carf:Street>1 Example Street</carf:Street>
+              <carf:PostCode>00000</carf:PostCode>
+            </carf:AddressFix>
+          </carf:Address>
+          <carf:BirthInfo>
+            <carf:BirthDate>1985-06-15</carf:BirthDate>
+          </carf:BirthInfo>
+        </carf:Individual>
+      </carf:UserID>
+      <carf:RelevantTransactions>
+        <carf:CryptoAsset>BTC</carf:CryptoAsset>
+        <carf:CryptoFiatIn>
+          <carf:NumberofTransactions>3</carf:NumberofTransactions>
+          <carf:Amount currCode="EUR">15000.00</carf:Amount>
+          <carf:NumberofUnits>0.5</carf:NumberofUnits>
+        </carf:CryptoFiatIn>
+      </carf:RelevantTransactions>
+      <carf:RelevantTransactions>
+        <carf:CryptoAsset>BTC</carf:CryptoAsset>
+        <carf:CryptoFiatOut>
+          <carf:NumberofTransactions>1</carf:NumberofTransactions>
+          <carf:Amount currCode="EURO">4200.10</carf:Amount>
+          <carf:NumberofUnits>0.1</carf:NumberofUnits>
+        </carf:CryptoFiatOut>
+      </carf:RelevantTransactions>
+      <carf:DocSpec>
+        <stf:DocTypeIndic>OECD1</stf:DocTypeIndic>
+        <stf:DocRefId>GB2027-GOLDEN-U-0001</stf:DocRefId>
+      </carf:DocSpec>
+    </carf:CryptoUsers>
+    <carf:CryptoUsers>
+      <carf:UserID>
+        <carf:Entity>
+          <carf:ResCountryCode>FR</carf:ResCountryCode>
+          <carf:TIN issuedBy="FR">TEST-TIN-FR-0002</carf:TIN>
+          <carf:Name>Sample Holdings SAS</carf:Name>
+          <carf:Address>
+            <carf:CountryCode>FR</carf:CountryCode>
+            <carf:AddressFix>
+              <carf:Street>2 Sample Road</carf:Street>
+              <carf:PostCode>00001</carf:PostCode>
+              <carf:City>Lyon</carf:City>
+            </carf:AddressFix>
+          </carf:Address>
+        </carf:Entity>
+      </carf:UserID>
+      <carf:ControllingPerson>
+        <carf:Individual>
+          <carf:ResCountryCode>FR</carf:ResCountryCode>
+          <carf:TIN issuedBy="FR">TEST-TIN-FR-0003</carf:TIN>
+          <carf:Name>
+            <carf:FirstName>Sam</carf:FirstName>
+            <carf:LastName>Sample</carf:LastName>
+          </carf:Name>
+          <carf:Address>
+            <carf:CountryCode>FR</carf:CountryCode>
+            <carf:AddressFix>
+              <carf:Street>1 Example Street</carf:Street>
+              <carf:PostCode>00000</carf:PostCode>
+              <carf:City>Lyon</carf:City>
+            </carf:AddressFix>
+          </carf:Address>
+          <carf:BirthInfo>
+            <carf:BirthDate>1979-02-01</carf:BirthDate>
+          </carf:BirthInfo>
+        </carf:Individual>
+        <carf:CtrlgPersonType>CARF801</carf:CtrlgPersonType>
+        <carf:CtrlgPersonType>CARF803</carf:CtrlgPersonType>
+      </carf:ControllingPerson>
+      <carf:RelevantTransactions>
+        <carf:CryptoAsset>ETH</carf:CryptoAsset>
+        <carf:CryptoToCryptoIn>
+          <carf:NumberofTransactions>2</carf:NumberofTransactions>
+          <carf:Amount currCode="EUR">8000.00</carf:Amount>
+          <carf:NumberofUnits>3.25</carf:NumberofUnits>
+        </carf:CryptoToCryptoIn>
+      </carf:RelevantTransactions>
+      <carf:DocSpec>
+        <stf:DocTypeIndic>OECD1</stf:DocTypeIndic>
+        <stf:DocRefId>GB2027-GOLDEN-U-0002</stf:DocRefId>
+      </carf:DocSpec>
+    </carf:CryptoUsers>
+  </carf:CARFBody>
+</carf:CARF_OECD>
