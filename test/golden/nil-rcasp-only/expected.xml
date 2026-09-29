@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<carf:CARF_OECD xmlns:carf="urn:oecd:ties:carf:v1" xmlns:stf="urn:oecd:ties:carfstf:v5" xmlns:iso="urn:oecd:ties:isocarftypes:v1">
+  <carf:MessageSpec>
+    <carf:TransmittingCountry>GB</carf:TransmittingCountry>
+    <carf:ReceivingCountry>GB</carf:ReceivingCountry>
+    <carf:MessageType>CARF</carf:MessageType>
+    <carf:MessageRefId>GB2027GBGOLDEN0006</carf:MessageRefId>
+    <carf:MessageTypeIndic>CARF703</carf:MessageTypeIndic>
+    <carf:ReportingPeriod>2027-12-31</carf:ReportingPeriod>
+    <carf:Timestamp>2028-03-01T09:00:00</carf:Timestamp>
+  </carf:MessageSpec>
+  <carf:CARFBody>
+    <carf:RCASP>
+      <carf:RCASP_ID>
+        <carf:Entity>
+          <carf:ResCountryCode>GB</carf:ResCountryCode>
+          <carf:TIN issuedBy="GB">TEST-RCASP-0001</carf:TIN>
+          <carf:Name>Example Exchange Ltd</carf:Name>
+          <carf:Address>
+            <carf:CountryCode>GB</carf:CountryCode>
+            <carf:AddressFix>
+              <carf:Street>2 Sample Road</carf:Street>
+              <carf:PostCode>00001</carf:PostCode>
+              <carf:City>London</carf:City>
+            </carf:AddressFix>
+          </carf:Address>
+        </carf:Entity>
+      </carf:RCASP_ID>
+      <carf:Nexus>CARF901</carf:Nexus>
+      <carf:DocSpec>
+        <stf:DocTypeIndic>OECD1</stf:DocTypeIndic>
+        <stf:DocRefId>GB2027-GOLDEN-R-0006</stf:DocRefId>
+      </carf:DocSpec>
+    </carf:RCASP>
+  </carf:CARFBody>
+</carf:CARF_OECD>

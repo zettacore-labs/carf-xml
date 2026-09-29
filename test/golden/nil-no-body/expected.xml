@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<carf:CARF_OECD xmlns:carf="urn:oecd:ties:carf:v1" xmlns:stf="urn:oecd:ties:carfstf:v5" xmlns:iso="urn:oecd:ties:isocarftypes:v1">
+  <carf:MessageSpec>
+    <carf:TransmittingCountry>GB</carf:TransmittingCountry>
+    <carf:ReceivingCountry>FR</carf:ReceivingCountry>
+    <carf:MessageType>CARF</carf:MessageType>
+    <carf:MessageRefId>GB2027FRGOLDEN0007</carf:MessageRefId>
+    <carf:MessageTypeIndic>CARF703</carf:MessageTypeIndic>
+    <carf:ReportingPeriod>2027-12-31</carf:ReportingPeriod>
+    <carf:Timestamp>2028-03-01T09:00:00</carf:Timestamp>
+  </carf:MessageSpec>
+</carf:CARF_OECD>

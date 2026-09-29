@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<carf:CARF_OECD xmlns:carf="urn:oecd:ties:carf:v1" xmlns:stf="urn:oecd:ties:carfstf:v5" xmlns:iso="urn:oecd:ties:isocarftypes:v1">
+  <carf:MessageSpec>
+    <carf:TransmittingCountry>GB</carf:TransmittingCountry>
+    <carf:ReceivingCountry>FR</carf:ReceivingCountry>
+    <carf:MessageType>CARF</carf:MessageType>
+    <carf:MessageRefId>GB2027FRGOLDEN0002</carf:MessageRefId>
+    <carf:MessageTypeIndic>CARF701</carf:MessageTypeIndic>
+    <carf:ReportingPeriod>2027-12-31</carf:ReportingPeriod>
+    <carf:Timestamp>2028-03-01T09:00:00</carf:Timestamp>
+  </carf:MessageSpec>
+  <carf:CARFBody>
+    <carf:RCASP>
+      <carf:RCASP_ID>
+        <carf:Entity>
+          <carf:ResCountryCode>GB</carf:ResCountryCode>
+          <carf:TIN issuedBy="GB">TEST-RCASP-0001</carf:TIN>
+          <carf:Name>Example Exchange Ltd</carf:Name>
+          <carf:Address>
+            <carf:CountryCode>GB</carf:CountryCode>
+            <carf:AddressFix>
+              <carf:Street>2 Sample Road</carf:Street>
+              <carf:PostCode>00001</carf:PostCode>
+              <carf:City>London</carf:City>
+            </carf:AddressFix>
+          </carf:Address>
+        </carf:Entity>
+      </carf:RCASP_ID>
+      <carf:Nexus>CARF901</carf:Nexus>
+      <carf:DocSpec>
+        <stf:DocTypeIndic>OECD1</stf:DocTypeIndic>
+        <stf:DocRefId>GB2027-GOLDEN-R-0002</stf:DocRefId>
+      </carf:DocSpec>
+    </carf:RCASP>
+    <carf:CryptoUsers>
+      <carf:UserID>
+        <carf:Individual>
+          <carf:ResCountryCode>FR</carf:ResCountryCode>
+          <carf:TIN issuedBy="FR">TEST-TIN-FR-0001</carf:TIN>
+          <carf:Name>
+            <carf:FirstName>Alex</carf:FirstName>
+            <carf:LastName>Example</carf:LastName>
+          </carf:Name>
+          <carf:Address>
+            <carf:CountryCode>FR</carf:CountryCode>
+            <carf:AddressFix>
+              <carf:Street>1 Example Street</carf:Street>
+              <carf:PostCode>00000</carf:PostCode>
+              <carf:City>Paris</carf:City>
+            </carf:AddressFix>
+          </carf:Address>
+          <carf:BirthInfo>
+            <carf:BirthDate>1985-06-15</carf:BirthDate>
+          </carf:BirthInfo>
+        </carf:Individual>
+      </carf:UserID>
+      <carf:RelevantTransactions>
+        <carf:CryptoAsset>BTC</carf:CryptoAsset>
+        <carf:CryptoToCryptoIn>
+          <carf:ExchangeType>CARF401</carf:ExchangeType>
+          <carf:NumberofTransactions>1</carf:NumberofTransactions>
+          <carf:Amount currCode="EUR">1234.57</carf:Amount>
+          <carf:NumberofUnits>0.123457</carf:NumberofUnits>
+        </carf:CryptoToCryptoIn>
+      </carf:RelevantTransactions>
+      <carf:RelevantTransactions>
+        <carf:CryptoAsset>BTC</carf:CryptoAsset>
+        <carf:CryptoToCryptoOut>
+          <carf:ExchangeType>CARF402</carf:ExchangeType>
+          <carf:NumberofTransactions>2</carf:NumberofTransactions>
+          <carf:Amount currCode="EUR">999.99</carf:Amount>
+          <carf:NumberofUnits>0.02</carf:NumberofUnits>
+        </carf:CryptoToCryptoOut>
+      </carf:RelevantTransactions>
+      <carf:RelevantTransactions>
+        <carf:CryptoAsset>BTC</carf:CryptoAsset>
+        <carf:CryptoFiatIn>
+          <carf:ExchangeType>CARF403</carf:ExchangeType>
+          <carf:NumberofTransactions>1</carf:NumberofTransactions>
+          <carf:Amount currCode="EUR">0.00</carf:Amount>
+          <carf:NumberofUnits>0.000001</carf:NumberofUnits>
+        </carf:CryptoFiatIn>
+        <carf:CryptoFiatIn>
+          <carf:ExchangeType>CARF404</carf:ExchangeType>
+          <carf:NumberofTransactions>4</carf:NumberofTransactions>
+          <carf:Amount currCode="EUR">250.50</carf:Amount>
+          <carf:NumberofUnits>0.01</carf:NumberofUnits>
+        </carf:CryptoFiatIn>
+      </carf:RelevantTransactions>
+      <carf:RelevantTransactions>
+        <carf:CryptoAsset>BTC</carf:CryptoAsset>
+        <carf:CryptoFiatOut>
+          <carf:NumberofTransactions>5</carf:NumberofTransactions>
+          <carf:Amount currCode="EUR">72000.00</carf:Amount>
+          <carf:NumberofUnits>1.2</carf:NumberofUnits>
+        </carf:CryptoFiatOut>
+      </carf:RelevantTransactions>
+      <carf:RelevantTransactions>
+        <carf:CryptoAsset>BTC</carf:CryptoAsset>
+        <carf:CryptoTransferIn>
+          <carf:TransferType>CARF505</carf:TransferType>
+          <carf:NumberofTransactions>2</carf:NumberofTransactions>
+          <carf:Amount currCode="EUR">3100.00</carf:Amount>
+          <carf:NumberofUnits>0.05</carf:NumberofUnits>
+          <carf:AltValuation>CARF1001</carf:AltValuation>
+        </carf:CryptoTransferIn>
+        <carf:CryptoTransferIn>
+          <carf:TransferType>CARF509</carf:TransferType>
+          <carf:NumberofTransactions>1</carf:NumberofTransactions>
+          <carf:Amount currCode="EUR">10.00</carf:Amount>
+          <carf:NumberofUnits>0.0002</carf:NumberofUnits>
+        </carf:CryptoTransferIn>
+      </carf:RelevantTransactions>
+      <carf:RelevantTransactions>
+        <carf:CryptoAsset>BTC</carf:CryptoAsset>
+        <carf:CryptoTransferOut>
+          <carf:TransferType>CARF601</carf:TransferType>
+          <carf:NumberofTransactions>1</carf:NumberofTransactions>
+          <carf:Amount currCode="EUR">620.00</carf:Amount>
+          <carf:NumberofUnits>0.01</carf:NumberofUnits>
+          <carf:AltValuation>CARF1002</carf:AltValuation>
+        </carf:CryptoTransferOut>
+      </carf:RelevantTransactions>
+      <carf:RelevantTransactions>
+        <carf:CryptoAsset>BTC</carf:CryptoAsset>
+        <carf:TransferWallet>
+          <carf:Amount currCode="EUR">1500.00</carf:Amount>
+          <carf:NumberofUnits>0.025</carf:NumberofUnits>
+          <carf:AltValuation>CARF1004</carf:AltValuation>
+        </carf:TransferWallet>
+      </carf:RelevantTransactions>
+      <carf:RelevantTransactions>
+        <carf:CryptoAsset>BTC</carf:CryptoAsset>
+        <carf:RRPT>
+          <carf:NumberofTransactions>1</carf:NumberofTransactions>
+          <carf:Amount currCode="EUR">61000.00</carf:Amount>
+          <carf:NumberofUnits>1</carf:NumberofUnits>
+        </carf:RRPT>
+      </carf:RelevantTransactions>
+      <carf:DocSpec>
+        <stf:DocTypeIndic>OECD1</stf:DocTypeIndic>
+        <stf:DocRefId>GB2027-GOLDEN-U-0003</stf:DocRefId>
+      </carf:DocSpec>
+    </carf:CryptoUsers>
+  </carf:CARFBody>
+</carf:CARF_OECD>
