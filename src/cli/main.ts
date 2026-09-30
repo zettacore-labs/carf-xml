@@ -34,6 +34,18 @@ export interface Io {
 
 class UsageError extends Error {}
 
+/**
+ * Keeps the CLI alive when its output is closed early (e.g. `carf-xml validate f.xml | head`):
+ * the rest of the output is dropped and the exit code still reports the result.
+ */
+export function ignoreBrokenPipe(stream: NodeJS.WritableStream): void {
+  stream.on("error", (error: NodeJS.ErrnoException) => {
+    if (error.code !== "EPIPE") {
+      throw error;
+    }
+  });
+}
+
 function single(positionals: readonly string[], what: string): string {
   if (positionals.length !== 1 || positionals[0] === undefined) {
     throw new UsageError(`Expected exactly one ${what}.`);

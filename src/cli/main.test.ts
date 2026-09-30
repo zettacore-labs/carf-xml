@@ -1,10 +1,11 @@
 import { mkdtempSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
+import { PassThrough } from "node:stream";
 
 import { afterAll, describe, expect, it } from "vitest";
 
-import { runCli, USAGE, type Io } from "./main.js";
+import { ignoreBrokenPipe, runCli, USAGE, type Io } from "./main.js";
 
 const GOLDEN = join(import.meta.dirname, "../../test/golden");
 const dir = mkdtempSync(join(tmpdir(), "carf-xml-cli-"));
@@ -19,6 +20,19 @@ function io(
   const errors: string[] = [];
   return { lines, errors, env, out: (t) => lines.push(t), err: (t) => errors.push(t) };
 }
+
+describe("ignoreBrokenPipe", () => {
+  it("drops EPIPE errors and rethrows anything else", () => {
+    const stream = new PassThrough();
+    ignoreBrokenPipe(stream);
+    expect(() =>
+      stream.emit("error", Object.assign(new Error("write EPIPE"), { code: "EPIPE" })),
+    ).not.toThrow();
+    expect(() =>
+      stream.emit("error", Object.assign(new Error("disk full"), { code: "ENOSPC" })),
+    ).toThrow("disk full");
+  });
+});
 
 describe("carf-xml CLI", () => {
   it("prints help", async () => {

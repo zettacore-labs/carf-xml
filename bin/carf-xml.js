@@ -1,5 +1,8 @@
 #!/usr/bin/env node
-import { runCli } from "../dist/cli/main.js";
+import { ignoreBrokenPipe, runCli } from "../dist/cli/main.js";
+
+ignoreBrokenPipe(process.stdout);
+ignoreBrokenPipe(process.stderr);
 
 process.exitCode = await runCli(process.argv.slice(2), {
   out: (text) => {
