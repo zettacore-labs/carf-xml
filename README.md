@@ -1,4 +1,4 @@
-# @zettacore-labs/carf-xml
+# @zettacore/carf-xml
 
 Build, validate and explain **OECD Crypto-Asset Reporting Framework (CARF)** XML messages, exactly as the official OECD XML Schema defines them. Use it to produce CARF files, or to check any CARF file before you send it.
 
@@ -24,13 +24,13 @@ Licensed under the Apache License, Version 2.0. This is not an OECD product.
 ## Install
 
 ```bash
-npm install @zettacore-labs/carf-xml
+npm install @zettacore/carf-xml
 ```
 
 ## Build a message
 
 ```ts
-import { asDecimalString, buildCarfXml, type CarfMessage } from "@zettacore-labs/carf-xml";
+import { asDecimalString, buildCarfXml, type CarfMessage } from "@zettacore/carf-xml";
 
 const message: CarfMessage = {
   messageSpec: {
@@ -112,7 +112,7 @@ Things to know about the model:
 
 ```ts
 import { readFileSync } from "node:fs";
-import { validateCarfXml } from "@zettacore-labs/carf-xml";
+import { validateCarfXml } from "@zettacore/carf-xml";
 
 const report = await validateCarfXml(readFileSync("message.xml"), {
   schemaDir: "/path/to/carf-xml-schema-v1.5",
@@ -158,7 +158,7 @@ Some checks need earlier filings and cannot be done on one message. Examples: a 
 ## Read a CARF Status Message
 
 ```ts
-import { parseCarfStatusMessage } from "@zettacore-labs/carf-xml";
+import { parseCarfStatusMessage } from "@zettacore/carf-xml";
 
 const status = await parseCarfStatusMessage(xml, { schemaDir: "/path/to/carf-status-message-schema-v1.1" });
 status.status; // "Accepted" | "Rejected"

@@ -1,5 +1,5 @@
 {
-  "name": "@zettacore-labs/carf-xml",
+  "name": "@zettacore/carf-xml",
   "version": "0.1.0",
   "description": "Build, validate and explain OECD Crypto-Asset Reporting Framework (CARF) XML messages, exactly as the official OECD XML Schema defines them.",
   "license": "Apache-2.0",

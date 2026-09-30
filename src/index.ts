@@ -1,4 +1,4 @@
-// @zettacore-labs/carf-xml: build, validate and explain OECD CARF XML messages.
+// @zettacore/carf-xml: build, validate and explain OECD CARF XML messages.
 // Licensed under the Apache License, Version 2.0.
 
 export * from "./generated/enums.js";
