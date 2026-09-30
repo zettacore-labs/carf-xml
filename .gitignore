@@ -1,0 +1,13 @@
+# This folder is mirrored to the public repository on its own, so it needs its own ignore rules.
+node_modules/
+dist/
+coverage/
+.turbo/
+*.tsbuildinfo
+*.log
+*.tgz
+
+# Never commit credentials.
+.env
+.env.*
+.npmrc
