@@ -57,7 +57,7 @@
   "dependencies": {
     "saxes": "6.0.0",
     "xmlbuilder2": "4.0.3",
-    "zod": "4.6.5"
+    "zod": "4.6.6"
   },
   "devDependencies": {
     "@eslint/js": "10.0.1",
